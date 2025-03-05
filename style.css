@@ -1,0 +1,671 @@
+@supports (color-scheme: light dark) {
+  @media screen {
+    :root {
+      color-scheme: light dark;
+    }
+  }
+
+  @media screen and (prefers-color-scheme: light) {
+    :root {
+      --background-color: #fffacd;
+      --color: #333333;
+      border-color: rgb(196 188 0 / 99%);
+    }
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #444444;
+      --color: #ffffff;
+      border-color: rgb(100 196 102 / 0.5);
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    body {
+      background-color: #fffacd;
+      color: #333333;
+      font-family: sans-serif;
+      margin: 25px 50px 0 50px;
+      padding: 0;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #444444;
+      color: #ffffff;
+      font-family: sans-serif;
+      margin: 25px 50px 0 50px;
+      padding: 0;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    a:only-child {
+      color: #333333;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    a:only-child {
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .navigation {
+      background-color: rgb(51 51 51);
+      border-bottom-color: rgb(196 188 0 / 99%);
+    }
+
+    .navigation {
+      transition: border-bottom-color 7s 500ms;
+    }
+
+    .navigation:active {
+      border-bottom: none;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .navigation {
+      background-color: rgb(51 51 51);
+      border-bottom-color: rgb(100 196 102 / 0.5);
+    }
+
+    .navigation {
+      transition: border-bottom-color 7s 500ms;
+    }
+
+    .navigation:active {
+      border-bottom: none;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .navigation > a {
+      color: rgb(255 255 255);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .navigation > a {
+      color: rgb(100 196 102 / 0.5);
+    }
+  }
+
+  @media (prefers-color-scheme: light) and (hover: hover) {
+    a:hover {
+      text-decoration: none;
+      color: rgb(196 188 0 / 99%);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) and (hover: hover) {
+    a:hover {
+      text-decoration: none;
+      color: rgb(100 196 102 / 0.5);
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .article {
+      border-bottom-color: rgb(196 188 0 / 99%);
+      transition: border-bottom-color 4s 500ms;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .article {
+      border-bottom-color: rgb(100 196 102 / 0.5);
+      transition: border-bottom-color 4s 500ms;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    ul:hover {
+      border-top-color: rgb(196 188 0 / 99%);
+      border-bottom-color: rgb(196 188 0 / 99%);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    ul:hover {
+      border-bottom-color: rgb(100 196 102 / 0.5);
+      border-top-color: rgb(100 196 102 / 0.5);
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .contact label:valid,
+    label:focus {
+      input:active {
+        color: rgb(196 188 0 / 99%);
+        transition: 2s;
+      }
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    /* From Uiverse.io by andrew-demchenk0 */
+    .web-contact-label {
+      position: relative;
+    }
+
+    .web-contact-input {
+      width: 190px;
+      height: 35px;
+      border-radius: 5px;
+      border: 2px #323232 solid;
+      padding: 5px 15px;
+      background-color: #e8e8e8;
+      font-size: 15;
+      font-weight: 500;
+    }
+
+    .placeholder {
+      width: 65%;
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      text-align: center;
+      color: rgb(196 188 0 / 99%);
+      background-color: #fffacd;
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      transition: all 0.3s;
+      opacity: 0;
+    }
+
+    .web-contact-input::placeholder {
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .web-contact-input:focus + .placeholder {
+      opacity: 1;
+    }
+
+    .web-contact-input:focus {
+      outline: 2px solid rgb(196 188 0 / 99%);
+      border: none;
+      color: rgb(196 188 0 / 99%);
+    }
+
+    .web-contact-input:focus::placeholder {
+      opacity: 0;
+    }
+
+    .button {
+      color: #333333;
+      border: solid 2px #333333;
+    }
+
+    .button:hover {
+      background-color: rgb(196 188 0 / 99%);
+      color: #ffffff;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    /* From Uiverse.io by andrew-demchenk0 */
+    .web-contact-label {
+      position: relative;
+    }
+
+    .web-contact-input {
+      width: 190px;
+      height: 35px;
+      border-radius: 5px;
+      border: 2px #323232 solid;
+      padding: 5px 15px;
+      background-color: #e8e8e8;
+      font-size: 15;
+      font-weight: 500;
+    }
+
+    .placeholder {
+      width: 65%;
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      text-align: center;
+      color: rgb(100 196 102);
+      background-color: #444444;
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      transition: all 0.3s;
+      opacity: 0;
+    }
+
+    .web-contact-input::placeholder {
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .web-contact-input:focus + .placeholder {
+      opacity: 1;
+    }
+
+    .web-contact-input:focus {
+      outline: 2px solid rgb(100 196 102);
+      border: none;
+      color: rgb(100 196 102);
+    }
+
+    .web-contact-input:focus::placeholder {
+      opacity: 0;
+    }
+
+    .button {
+      color: #ffffff;
+      border: solid 2px #ffffff;
+    }
+
+    .button:hover {
+      background-color: rgb(100 196 102);
+      color: #444444;
+    }
+  }
+}
+
+/* ! Dimensions: Responsive */
+@supports (width: 425px) and (height: 425px) {
+  @media (max-height: 425px) and (max-width: 425px) {
+    html {
+      font-size: larger;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    html {
+      font-size: larger;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .title {
+      text-align: center;
+      align-content: center;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .title {
+      text-align: center;
+      align-content: center;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .shop {
+      margin-bottom: 0;
+    }
+
+    .tagline {
+      margin-top: 0;
+      border-top-style: solid;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .shop {
+      margin-bottom: 0;
+    }
+
+    .tagline {
+      margin-top: 0;
+      border-top-style: solid;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .navigation {
+      width: auto;
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom-style: solid;
+      border-bottom-width: 7px;
+      border-radius: 10px 10px 15px 15px;
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .navigation {
+      width: auto;
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom-style: solid;
+      border-bottom-width: 7px;
+      border-radius: 10px 10px 15px 15px;
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  @media (max-height) and (max-width) {
+    .navigation:active {
+      border-bottom: none;
+      margin-bottom: 7px;
+    }
+  }
+
+  @media (min-height) and (min-width) {
+    .navigation:active {
+      border-bottom: none;
+      margin-bottom: 7px;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .laguna-cafe-shop-story {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .article {
+      border-bottom-style: solid;
+      width: 100%;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .article {
+      border-bottom-style: solid;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .laguna-cafe-menu {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .laguna-cafe-menu {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .list {
+      display: flex;
+      width: 100%;
+      list-style: square;
+      border-top-style: groove;
+      border-bottom-style: groove;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .list {
+      display: flex;
+      justify-content: center;
+      align-items: right;
+      width: 100%;
+      list-style: square;
+      border-top-style: groove;
+      border-bottom-style: groove;
+      border-radius: 20%;
+      padding: 15% 0%;
+    }
+  }
+}
+/* ! Font-size */
+
+@supports (height: 1440px) and (width: 1440px) {
+  @media (max-height: 425px) and (max-width: 425px) {
+    html {
+      font-size: larger;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    html {
+      font-size: larger;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .title {
+      text-align: center;
+      align-content: center;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .title {
+      text-align: center;
+      align-content: center;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .shop {
+      margin-bottom: 0;
+    }
+
+    .tagline {
+      margin-top: 0;
+      border-top-style: solid;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .shop {
+      margin-bottom: 0;
+    }
+
+    .tagline {
+      margin-top: 0;
+      border-top-style: solid;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .navigation {
+      width: auto;
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom-style: solid;
+      border-bottom-width: 7px;
+      border-radius: 10px 10px 15px 15px;
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .navigation {
+      width: auto;
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom-style: solid;
+      border-bottom-width: 7px;
+      border-radius: 10px 10px 15px 15px;
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  @media (max-height) and (max-width) {
+    .navigation:active {
+      border-bottom: none;
+      margin-bottom: 7px;
+    }
+  }
+
+  @media (min-height) and (min-width) {
+    .navigation:active {
+      border-bottom: none;
+      margin-bottom: 7px;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .laguna-cafe-shop-story {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .article {
+      border-bottom-style: solid;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .article {
+      border-bottom-style: solid;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .laguna-cafe-menu {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .laguna-cafe-menu {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @media (max-height: 425px) and (max-width: 425px) {
+    .list {
+      display: flex;
+      width: 100%;
+      list-style: square;
+      border-top-style: groove;
+      border-bottom-style: groove;
+    }
+  }
+
+  @media (min-height: 425px) and (min-width: 425px) {
+    .list {
+      display: flex;
+      justify-content: center;
+      align-items: right;
+      width: 100%;
+      list-style: square;
+      border-top-style: groove;
+      border-bottom-style: groove;
+      border-radius: 20%;
+      padding: 15% 0%;
+    }
+  }
+}
+
+img[loading="lazy"]:hover {
+  opacity: 100%;
+}
+
+img[loading="lazy"] {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  max-width: 99.3%;
+  max-height: 100%;
+  border-left-style: solid;
+  border-right-style: solid;
+  justify-items: center;
+}
+
+img[loading="lazy"][loaded] {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer:hover {
+  color: light-dark(rgb(196 188 0 / 99%), rgb(100 196 102 / 0.5));
+}
+
+.intro {
+  border-left-style: solid;
+  border-bottom-left-radius: 20px;
+  padding-bottom: 8px;
+}
+
+.body {
+  border-left-style: solid;
+  border-bottom-left-radius: 20px;
+  padding-bottom: 8px;
+}
+
+.quote1 {
+  border-bottom-style: solid;
+  width: 400px;
+  border-bottom-left-radius: 20px;
+  padding-bottom: 8px;
+}
+/* todo: add media queries */
+
+/* todo: add .navigation position stick*/

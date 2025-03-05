@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Laguna Cafe</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1 id="laguna-cafe" class="shop">
+          <a tabindex="0" href="#laguna-cafe">Laguna Cafe</a>
+        </h1>
+        <p class="tagline">fresh daily - Laguna Cafe</p>
+      </div>
+      <div class="navigation">
+        <a class="first" tabindex="0" href="#our-story">Our Story</a>
+        <a class="second" tabindex="0" href="#menu">Menu</a>
+        <a class="third" tabindex="0" href="#contact">Contact Us</a>
+      </div>
+
+      <div class="article">
+        <div>
+          <article class="laguna-cafe-story">
+            <h2 id="our-story" class="laguna-cafe-shop-story">
+              <a tabindex="0" href="#our-story">Our Story</a>
+            </h2>
+            <p class="intro">We are Laguna Cafe!</p>
+            <p class="body">
+              every day our pastry case is fresh.
+              <br />
+              We have the top Baker's & Barista's in the area.
+              <br />
+              Visit for a delight & morning assistance.
+            </p>
+            <p class="quote1">"great for waking up." - client</p>
+          </article>
+        </div>
+        <div class="image">
+          <img
+            src="laguna-cafe (1).jpg"
+            alt="Laguna Cafe Shop"
+            tabindex="0"
+            loading="lazy"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="laguna-cafe-beverages (1).jpg"
+            alt="laguna-cafe-beverages"
+            tabindex="0"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="menu">
+        <h2 id="menu" class="laguna-cafe-menu">
+          <a tabindex="0" href="#menu">Menu</a>
+        </h2>
+        <!-- todo -->
+        <ul class="list" tabindex="0">
+          <li class="product">
+            <span>Pastry</span>
+            <ul>
+              <li><span>Muffin</span> - <span>$2.00</span></li>
+              <li><span>Cookie</span> - <span>$1.50</span></li>
+              <li><span>Strudel</span> - <span>$3.00</span></li>
+            </ul>
+          </li>
+          <li class="product">
+            <span>Coffee</span>
+            <ul>
+              <li>
+                <span>Blueberry fields forever</span> - <span>$3.00</span>
+              </li>
+              <li><span>Gone Bananas Foster</span> - <span>$3.50</span></li>
+              <li><span>French Vanilla</span> - <span>$3.00</span></li>
+              <li><span>Justina Clemente Huaman</span> - <span>$3.50</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <form method="post" enctype="application/x-www-form-urlencoded">
+          <fieldset>
+            <legend id="contact">
+              <a tabindex="0" href="#contact">Contact Us</a>
+            </legend>
+            <div class="client-web-contact">
+              <label for="name" class="web-contact-label">
+                <input
+                  class="web-contact-input"
+                  type="text"
+                  id="name"
+                  spellcheck="true"
+                  placeholder="customer name"
+                  required
+                  name="customer-name: "
+                  title="Name"
+                  tabindex="0"
+                />
+                <span class="placeholder">Name</span>
+              </label>
+            </div>
+            <div class="client-web-contact">
+              <label for="phone" class="web-contact-label">
+                <input
+                  class="web-contact-input"
+                  type="tel"
+                  id="phone"
+                  placeholder="+1 888-888-8888"
+                  required
+                  name="tel: "
+                  title="Phone"
+                  tabindex="0"
+                />
+                <span class="placeholder">Phone</span>
+              </label>
+            </div>
+            <div class="client-web-contact">
+              <label for="order" class="web-contact-label">
+                <input
+                  class="web-contact-input"
+                  type="text"
+                  id="order"
+                  spellcheck="true"
+                  placeholder="coffee or pastry catering also a le carte"
+                  required
+                  name="customer-order: "
+                  title="Order"
+                  tabindex="0"
+                />
+                <span class="placeholder">Order</span>
+              </label>
+            </div>
+            <input type="submit" value="SUBMIT" tabindex="0" class="button" />
+          </fieldset>
+        </form>
+      </div>
+      <div class="footer">
+        <footer>
+          <p>
+            <a href="./index.html" tabindex="0">
+              <span>&copy;</span> 2024 Laguna Cafe
+            </a>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
