@@ -7,25 +7,35 @@
     <title>Laguna Cafe</title>
   </head>
   <body>
+    <!-- container division -->
     <div class="container">
+      <!-- title division -->
       <div class="title">
+        <!--title-->
         <h1 id="laguna-cafe" class="shop">
           <a tabindex="0" href="#laguna-cafe">Laguna Cafe</a>
         </h1>
+        <!--tagline-->
         <p class="tagline">fresh daily - Laguna Cafe</p>
       </div>
+      <!-- End of title division
+      Start of navigation division -->
       <div class="navigation">
         <a class="first" tabindex="0" href="#our-story">Our Story</a>
         <a class="second" tabindex="0" href="#menu">Menu</a>
         <a class="third" tabindex="0" href="#contact">Contact Us</a>
       </div>
-
+      <!-- End of navigation division
+      Start of article division -->
       <div class="article">
         <div>
           <article class="laguna-cafe-story">
+            <!-- Start of Our Story -->
             <h2 id="our-story" class="laguna-cafe-shop-story">
               <a tabindex="0" href="#our-story">Our Story</a>
             </h2>
+            <!-- End of Our Story
+            Start of Hero Section -->
             <p class="intro">We are Laguna Cafe!</p>
             <p class="body">
               every day our pastry case is fresh.
@@ -34,9 +44,13 @@
               <br />
               Visit for a delight & morning assistance.
             </p>
+            <!-- End of Hero Section
+            Start of quote 1 -->
             <p class="quote1">"great for waking up." - client</p>
           </article>
         </div>
+        <!-- End of quote 1
+        Image one -->
         <div class="image">
           <img
             src="laguna-cafe (1).jpg"
@@ -45,6 +59,7 @@
             loading="lazy"
           />
         </div>
+        <!-- Image two -->
         <div class="image">
           <img
             src="laguna-cafe-beverages (1).jpg"
@@ -54,12 +69,17 @@
           />
         </div>
       </div>
+      <!-- End of article division 
+      Start of menu division -->
       <div class="menu">
+        <!-- Start of Menu -->
         <h2 id="menu" class="laguna-cafe-menu">
           <a tabindex="0" href="#menu">Menu</a>
         </h2>
-        <!-- todo -->
+        <!-- End of Menu
+        Start of list -->
         <ul class="list" tabindex="0">
+          <!-- product one -->
           <li class="product">
             <span>Pastry</span>
             <ul>
@@ -68,6 +88,7 @@
               <li><span>Strudel</span> - <span>$3.00</span></li>
             </ul>
           </li>
+          <!-- product two -->
           <li class="product">
             <span>Coffee</span>
             <ul>
@@ -81,12 +102,24 @@
           </li>
         </ul>
       </div>
+      <!-- End of menu division
+      Start of contact division -->
       <div class="contact">
-        <form method="post" enctype="application/x-www-form-urlencoded">
+        <!-- Start of form -->
+        <form
+          method="get"
+          enctype="text/plain"
+          action="index.html"
+          target="_self"
+          class="web-contact"
+          autocomplete="off"
+        >
           <fieldset>
+            <!-- Start of Contact Us -->
             <legend id="contact">
               <a tabindex="0" href="#contact">Contact Us</a>
             </legend>
+            <!--Name-->
             <div class="client-web-contact">
               <label for="name" class="web-contact-label">
                 <input
@@ -103,21 +136,24 @@
                 <span class="placeholder">Name</span>
               </label>
             </div>
+            <!--Phone-->
             <div class="client-web-contact">
               <label for="phone" class="web-contact-label">
                 <input
+                  maxlength="15"
                   class="web-contact-input"
                   type="tel"
                   id="phone"
                   placeholder="+1 888-888-8888"
                   required
-                  name="tel: "
+                  name="telephone: "
                   title="Phone"
                   tabindex="0"
                 />
                 <span class="placeholder">Phone</span>
               </label>
             </div>
+            <!--Order-->
             <div class="client-web-contact">
               <label for="order" class="web-contact-label">
                 <input
@@ -134,10 +170,13 @@
                 <span class="placeholder">Order</span>
               </label>
             </div>
+            <!--SUBMIT-->
             <input type="submit" value="SUBMIT" tabindex="0" class="button" />
           </fieldset>
         </form>
       </div>
+      <!-- End of contact division
+      Start of footer division -->
       <div class="footer">
         <footer>
           <p>
@@ -147,6 +186,8 @@
           </p>
         </footer>
       </div>
+      <!-- End of footer division -->
     </div>
+    <!-- End of container division-->
   </body>
 </html>
