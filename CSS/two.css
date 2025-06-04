@@ -81,27 +81,34 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.2em;
   margin-bottom: 0.5em;
   line-height: 1.2;
+  color: #c3bb01; /* gold accent for headings */
 }
 
 h1 {
   font-size: 2em;
   border-bottom: 2px solid #c3bb01;
   padding-bottom: 0.3em;
+  background: #222; /* dark background for contrast */
+  color: #fff;
 }
 
 h2 {
   font-size: 1.5em;
   border-bottom: 1px solid #c3bb01;
   padding-bottom: 0.2em;
+  background: #fafad2; /* light gold background */
+  color: #222;
 }
 
 h3 {
   font-size: 1.2em;
+  color: #555;
 }
 
 p {
   margin: 0.7em 0;
   line-height: 1.6;
+  color: #333;
 }
 
 ul, ol {
@@ -138,4 +145,27 @@ blockquote {
   padding: 0.7em 1em;
   color: #555;
   font-style: italic;
+}
+
+/* Side-by-side images */
+aside {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1em 0;
+}
+
+aside .image {
+  flex: 1 1 0;
+  max-width: 48%;
+}
+
+aside .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #c3bb01;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #fafad2;
 }
