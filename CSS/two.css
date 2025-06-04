@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0 8px 0 0;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  top: auto;
+}
+
+/* System Color */
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:visited {
+    color: grey;
+  }
+
+  a:active {
+    color: grey;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:visited {
+    color: grey;
+  }
+
+  a:active {
+    color: grey;
+  }
+}
+
+/* Page container */
+
+#container {
+  padding: 8px;
+  margin: 8px;
+}
+
+/* anchor styles */
+
+a {
+  text-decoration: none;
+}
+
+/* Header style */
+
