@@ -71,7 +71,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 nav ul {
@@ -84,18 +84,21 @@ nav ul {
 }
 
 nav ul li a {
-  color: #c3bb01;
+  color: #c3bb01; /* gold */
   font-weight: bold;
   text-decoration: none;
   padding: 0.5em 1em;
   border-radius: 4px;
-  transition: background 0.2s;
+  background: #222; /* dark background */
+  border: 2px solid transparent;
+  transition: background 0.2s, border 0.2s, color 0.2s;
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
-  background: #fafad2;
+  background: #fafad2; /* light gold */
   color: #222;
+  border: 2px solid #0074d9; /* blue border on hover */
 }
 
 /* Add space for fixed nav */
@@ -109,7 +112,7 @@ header {
   display: block;
   position: relative;
   background: linear-gradient(135deg, #c3bb01 80%, #fafad2 100%);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 16px 8px 8px 8px;
   text-align: center;
   border-bottom: 3px solid #222;
@@ -121,8 +124,15 @@ header {
 header::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(120deg, rgba(255,255,255,0.12) 0%, rgba(195,187,1,0.08) 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(195, 187, 1, 0.08) 100%
+  );
   z-index: 0;
   pointer-events: none;
 }
@@ -134,7 +144,12 @@ header * {
 
 /* Content type styles */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   margin-top: 1.2em;
@@ -170,7 +185,8 @@ p {
   color: #333;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 1em 0 1em 2em;
   padding: 0;
 }
@@ -179,7 +195,8 @@ li {
   margin-bottom: 0.4em;
 }
 
-code, pre {
+code,
+pre {
   font-family: "Fira Mono", "Consolas", monospace;
   background: #f4f4f4;
   color: #333;
@@ -225,6 +242,39 @@ aside .image img {
   height: auto;
   border-radius: 8px;
   border: 2px solid #c3bb01;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   background: #fafad2;
+}
+
+/* Menu Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #222;
+  color: #c3bb01; /* gold text */
+  margin: 2em 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.table th,
+.table td {
+  padding: 0.75em 1em;
+  border: 1px solid #c3bb01;
+  text-align: left;
+  transition: background 0.2s, color 0.2s;
+}
+
+.table th {
+  background: #fafad2; /* light gold */
+  color: #222;
+}
+
+.table tr {
+  transition: background 0.2s, color 0.2s;
+}
+
+.table tr:hover td {
+  background: #e6f2fb;      /* light blue background on hover */
+  color: #0074d9;           /* blue text on hover */
+  border-left: 4px solid #0074d9; /* blue border on hover */
 }
