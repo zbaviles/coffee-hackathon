@@ -351,3 +351,64 @@ aside .image img {
   color: #fafad2; /* light gold text */
   border: solid 2px #c3bb01; /* gold border on hover */
 }
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  background: #222;
+  color: #fafad2; /* light gold */
+  text-align: center;
+  padding: 1.2em 0 1em 0;
+  border-top: 2px solid #c3bb01;
+  font-size: 1em;
+  margin-top: 2em;
+  letter-spacing: 1px;
+}
+
+footer a {
+  color: #c3bb01;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.page {
+  color: #000;
+}
+
+footer a:hover {
+  color: #0074d9;
+}
+
+/* Reimagined UL Styles */
+ul {
+  margin: 1.2em 0 1.2em 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 0.7em;
+  color: #222;
+  background: #fafad2;
+  border-radius: 6px;
+  border-left: 4px solid #c3bb01;
+  transition: background 0.2s, color 0.2s;
+}
+
+ul li::before {
+  content: "☕";
+  position: absolute;
+  left: 0.7em;
+  top: 0.1em;
+  color: #c3bb01;
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+ul li:hover {
+  background: #e6f2fb;
+  color: #0074d9;
+  border-left: 4px solid #0074d9;
+}
