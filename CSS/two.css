@@ -65,7 +65,77 @@ a {
 
 header {
   width: 100%;
+  display: block;
   position: relative;
   background-color: #c3bb01;
   padding: 4px 8px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* Content type styles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2em;
+  border-bottom: 2px solid #c3bb01;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #c3bb01;
+  padding-bottom: 0.2em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  margin: 0.7em 0;
+  line-height: 1.6;
+}
+
+ul, ol {
+  margin: 1em 0 1em 2em;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+code, pre {
+  font-family: "Fira Mono", "Consolas", monospace;
+  background: #f4f4f4;
+  color: #333;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+pre {
+  display: block;
+  padding: 12px;
+  overflow-x: auto;
+  background: #222;
+  color: #f8f8f2;
+  border-radius: 4px;
+  margin: 1em 0;
+}
+
+blockquote {
+  border-left: 4px solid #c3bb01;
+  background: #fafad2;
+  margin: 1em 0;
+  padding: 0.7em 1em;
+  color: #555;
+  font-style: italic;
 }
