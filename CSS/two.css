@@ -3,7 +3,6 @@ body {
   padding: 0 8px 0 0;
   font-size: 15px;
   font-weight: normal;
-  font-family: "Open Sans", sans-serif;
   position: relative;
   top: auto;
 }
@@ -51,6 +50,7 @@ body {
 /* Page container */
 
 #container {
+  font-family: "Open Sans", sans-serif;
   padding: 8px;
   margin: 8px;
 }
@@ -62,4 +62,3 @@ a {
 }
 
 /* Header style */
-
