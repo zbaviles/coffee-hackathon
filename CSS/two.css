@@ -274,7 +274,80 @@ aside .image img {
 }
 
 .table tr:hover td {
-  background: #e6f2fb;      /* light blue background on hover */
-  color: #0074d9;           /* blue text on hover */
+  background: #e6f2fb; /* light blue background on hover */
+  color: #0074d9; /* blue text on hover */
   border-left: 4px solid #0074d9; /* blue border on hover */
+}
+
+.laguna-contact-label {
+  position: relative;
+}
+
+.laguna-contact-input {
+  width: 190px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px solid #c3bb01; /* gold border */
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  background: #fafad2; /* light gold background */
+  color: #222; /* dark text */
+}
+
+.laguna-contact-input::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #000; /* gold placeholder */
+}
+
+.laguna-placeholder {
+  width: 65%;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-align: center;
+  color: #000; /* gold */
+  background-color: #fafad2; /* light gold */
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  transition: all 0.3s;
+  opacity: 0;
+  border: 1px solid #0074d9;
+}
+
+.laguna-contact-input:focus + .laguna-placeholder {
+  opacity: 1;
+}
+
+.laguna-contact-input:focus {
+  outline: 2px solid #0074d9; /* blue outline on focus */
+  border: none;
+  color: #222;
+  background: #fff;
+}
+
+.laguna-contact-input:focus::placeholder {
+  opacity: 0;
+}
+
+.laguna-button {
+  color: #000;
+  background: #c3bb01; /* gold */
+  border: solid 2px #0074d9; /* blue border */
+  border-radius: 5px;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  cursor: pointer;
+}
+
+.laguna-button:hover {
+  background: #0074d9; /* blue on hover */
+  color: #fafad2; /* light gold text */
+  border: solid 2px #c3bb01; /* gold border on hover */
 }
