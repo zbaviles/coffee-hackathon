@@ -62,3 +62,10 @@ a {
 }
 
 /* Header style */
+
+header {
+  width: 100%;
+  position: relative;
+  background-color: #c3bb01;
+  padding: 4px 8px;
+}
